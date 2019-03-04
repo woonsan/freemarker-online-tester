@@ -35,6 +35,7 @@ project.sourceCompatibility = "1.8"
 project.targetCompatibility = "1.8"
 
 repositories {
+    mavenLocal()
     mavenCentral()
     maven {
         url "https://repository.apache.org/content/repositories/snapshots/"
@@ -72,7 +73,7 @@ dependencies {
     testCompile libraries.mockito
     testCompile libraries.hamcrest
     testCompile libraries.jersey_grrizle
-    
+
     rat libraries.rat
 }
 
